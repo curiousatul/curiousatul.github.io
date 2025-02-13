@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atul Pathria - Building Resilience</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #34495e;
+            --light-bg: #f8f9fa;
+            --spacing: 6rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #f6f8fa 0%, #e9ecef 100%);
+        }
+
+        .hero {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: var(--spacing);
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        section {
+            padding: var(--spacing) 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-title span {
+            font-size: 2.5rem;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .visible {
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #3498db20 0%, #3498db20 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 0.4em;
+            background-position: 0 88%;
+            transition: background-size 0.25s ease-in;
+        }
+
+        .highlight:hover {
+            background-size: 100% 100%;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 4rem 0;
+            background: var(--light-bg);
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .cta:hover {
+            transform: translateY(-3px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Atul Pathria</h1>
+            <div class="subtitle">Building Resilience, One Step at a Time</div>
+            <p class="intro">
+                Think of me as someone who bridges the gap between innovation and impact, 
+                between solving problems and leaving legacies.
+            </p>
+            <a href="#about" class="cta">Learn More</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2 class="section-title"><span>🧠</span> Strategic by Nature, Resilient by Choice</h2>
+            <div class="content">
+                <p>
+                    I didn't just stumble into cybersecurity or product management—I built my path brick by brick. 
+                    Starting out as a PHP developer, I transitioned into server administration, then dived headfirst 
+                    into the world of cybersecurity. Today, I help businesses become <span class="highlight">resilient</span>. 
+                    Not just safe from attacks but strong enough to bounce back better, faster, and smarter.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title"><span>💡</span> My Belief? Resilience is a Superpower</h2>
+            <div class="content">
+                <p>
+                    The world doesn't need more "fixers." It needs <span class="highlight">builders</span>—people who see beyond 
+                    the immediate problem and create systems that can withstand the test of time. That's how I approach everything, 
+                    from creating AI products to mentoring the next wave of entrepreneurs.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title"><span>📚</span> Words That Matter</h2>
+            <div class="content">
+                <p>
+                    I've penned books like "Unlocking Your Networking Potential" and "Coffee Dialogues" because I believe 
+                    sharing knowledge is as important as gaining it. My content isn't fluff—it's <span class="highlight">actionable insights</span> 
+                    wrapped in relatable stories.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title"><span>🌍</span> What Drives Me? Legacy & Mastery</h2>
+            <div class="content">
+                <p>
+                    I don't believe in doing things halfway. My work is an extension of who I am—a perfectionist who sees 
+                    every challenge as an opportunity to master something new. But mastery without legacy is meaningless. 
+                    I want my journey to inspire others to step out of their comfort zones, push boundaries, and create 
+                    something bigger than themselves.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Let's build something resilient together.</p>
+            <a href="#" class="cta">Get in Touch</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        document.querySelectorAll('.content').forEach(content => {
+            observer.observe(content);
+        });
+    </script>
+</body>
+</html>
